@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+
+	<!-- Libs -->
+	<link rel="stylesheet" href="assets/css/jquery-ui-1.11.2/jquery-ui.theme.min.css">
+	<script src="assets/js/jquery/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/jquery/jquery.xml2json.js"></script>
+	<script src="assets/js/jquery-ui-1.11.2/jquery-ui.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="assets/js/bootstrap-3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/js/bootstrap-3.2.0/css/bootstrap-theme.min.css">
+	<script src="assets/js/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+
+	<!-- D3 -->	
+	<script src="assets/js/d3/d3.min.js"></script>
+	<script src="assets/js/moment.js"></script>
+	<!-- my app -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+	<header>
+		<h1 class="title">SF Muni Transit</h1>
+		<div id="progressbar"></div>
+		<p id="next_update"></p>
+		
+	</header>
+	<div class="main">
+		<div id="map"></div>
+	</div>
+	<div id="sidebar">
+		<br/>
+		<h2 title="I hope you like it!">Select Routes</h2>
+
+		<div id="rp">
+			<div>
+				<p class='button all_route_toggle'>All</p>
+			</div>
+			<div id="rp_lightrail">
+				<!-- bootstrap's popover data embedded in DOM -->
+				<p class='rp_label' id='get_started' title="Getting Started" data-container="body" data-toggle="popover" data-placement="left" data-content="Select some routes to get started">Light Rail</p>
+			</div>
+			<div id="rp_bus">
+				<p class='rp_label'>Bus</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<a href="http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf">source: nextbus.com</a>
+
+		</footer>
+
+	<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
