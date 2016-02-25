@@ -55,9 +55,16 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+var runport;
+if (app.get('port')== undefined){
 
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
+  runport=3000;
+}
+else{
+  runport=app.get('port');
+}
+app.listen(runport, function() {
+  console.log('Node app is running on port' + ''+ runport);
 });
 
 
